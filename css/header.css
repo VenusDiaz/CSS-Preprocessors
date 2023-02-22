@@ -217,12 +217,20 @@ nav li a:hover {
 }
 
 @media(max-width:768px) {
+    .header-points-bg {
+        left: -106px;
+    }
+
+    .header-img-bg, .header-small-points-bg, .header-points-bg {
+        background-size: cover;
+        background-position: right;
+    }
 
     .header-img-bg {
         position: absolute;
         background-image: url("../public/bgHero.png");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         height: calc(822px + 22px);
         width: calc(100% + 116px);
         top: -22px;
@@ -277,4 +285,11 @@ nav li a:hover {
     .app-header__nav-menu-button-icon span:nth-child(1) {
         margin-top: 0px;
     }
+}
+
+@media(min-width:1200px) {
+    .header-points-bg {
+        left: -106px;
+    }
+
 }
