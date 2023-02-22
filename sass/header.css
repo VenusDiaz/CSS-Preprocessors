@@ -1,0 +1,35 @@
+.app-header__nav-menu-button {
+  z-index: 1000;
+  position: absolute;
+  left: 162px;
+  top: 45px;
+  display: flex;
+  left: 0;
+  margin: auto;
+  width: calc(100% - 32px);
+  flex-direction: row;
+  align-items: center;
+}
+.app-header__nav-menu-button *:nth-child(1) {
+  margin: 0;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.app-header__nav-menu-button h1:nth-child(1) {
+  position: relative;
+  text-align: left;
+  left: 32px;
+  margin: initial;
+}
+
+.footer {
+  background-color: "yellow";
+  font-size: 24px;
+  font-weight: bold;
+}/*# sourceMappingURL=header.css.map */
