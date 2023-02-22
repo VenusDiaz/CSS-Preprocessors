@@ -80,7 +80,7 @@ nav li a:hover {
     align-items: center;
     height: 822px;
     min-height: 300px;
-    z-index: 1000;
+    z-index: 1400;
 }
 
 .hero div:first-of-type {
@@ -133,7 +133,7 @@ nav li a:hover {
 
 
     100% {
-        transform: scale(1.05, .95);
+        transform: scale(.95, 1.05);
 
     }
 }
