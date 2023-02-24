@@ -82,37 +82,4 @@ main {
   text-align: center;
   letter-spacing: 0.1em;
   color: var(--white-color);
-}
-
-@media (max-width: 768px) {
-  .main__info--center, main {
-    height: 100%;
-    margin: 65px 0 116px 0;
-  }
-  .main__text {
-    text-align: left;
-    margin: unset;
-    display: block;
-    margin: unset;
-  }
-  .main__title, .main__subtitle {
-    text-align: center;
-    margin: unset;
-  }
-  .main__title h2, .main__subtitle h3 {
-    display: block;
-  }
-  .main__title br {
-    display: none;
-  }
-  .main__info--center {
-    display: block;
-    margin-left: 27px;
-  }
-  .main__text--left, .main__text--right {
-    width: auto;
-  }
-  .main__bottom {
-    text-align: center;
-  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,143 @@
+$layout-breakpoint-small: 768px
+$layout-breakpoint-big: 1200px
+
+@media (max-width: $layout-breakpoint-small)
+    .main__info--center, main
+        height: 100%
+        margin: 65px 0 116px 0
+    .main__text
+        text-align: left
+        margin: unset
+        display: block
+        margin: unset
+    .main__title, .main__subtitle
+        text-align: center
+        margin: unset
+    .main__title h2, .main__subtitle h3
+        display: block
+    .main__title
+        br
+            display: none
+    .main__info--center
+        display: block
+        margin-left: 27px
+    .main__text--left, .main__text--right
+        width: auto
+    .main__bottom
+        text-align: center
+@media (max-width: $layout-breakpoint-small)
+    .learn__bottom
+        width: 100px
+        height: 100px
+        margin-top: 91px
+        margin-bottom: 82px
+        &:hover
+            background-color: var(--white-color)
+            transform: scale(.9)
+            transition: .9s ease-out
+            & > span
+                color: var(--bottom-color)
+                transform: .9s ease-in-out
+    span
+        font-size: 50px
+        bottom: 8px
+
+@media (max-width: $layout-breakpoint-small)
+    .footer
+        text-align: center
+        background-color: var(--background-color)
+        font-family: var(--main-font)
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: var(--footer-color)
+        height: 100%
+        .footer__info
+            margin: unset
+            padding: unset
+            display: block
+            padding: 58px 0 75px 0
+            .footer__image-container
+                display: flex
+                justify-content: center
+                color: var(--white-color)
+                font-family: var(--main-font)
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 16px
+                margin-bottom: 31px
+                letter-spacing: 0.2em
+                text-transform: uppercase
+                .footer__image
+                    width: 20px
+                    height: 20px
+                    margin: 0px 16px 0 5px
+                    text-align: left
+            .footer__address
+                text-align: center
+                margin: unset
+                margin-bottom: 18px
+            .footer__mail
+                text-align: center
+                margin-bottom: 19px
+            .footer__rights
+                text-align: center
+                margin: 0px
+
+@media (max-width: $layout-breakpoint-small)
+
+    .header__img-points-bg
+        left: -106px
+    .header__img-bg, .header__img-small-points-bg, .header__img-points-bg
+        background-size: cover
+        background-position: right
+    .header__img-bg
+        position: absolute
+        background-image: url("../public/bgHero.png")
+        background-repeat: no-repeat
+        background-size: cover
+        height: calc(822px + 22px)
+        width: calc(100% + 116px)
+        top: -22px
+        left: -116px
+        img
+            position: relative
+            right: 10px
+    .nav__menu
+        display: none
+    .nav__container
+        display: flex
+        left: 0
+        margin: auto
+        width: calc(100% - 32px)
+        flex-direction: row
+        align-items: center
+        h1
+            &:nth-child(1)
+                position: relative
+                text-align: left
+                left: 32px
+                margin: initial
+    .nav__hamburguer
+        position: absolute
+        right: 21px
+        width: 22px
+        z-index: 1050
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        span
+            &:nth-child(n)
+                display: block
+                width: 100%
+                background-color: var(--white-color)
+                height: 3px
+                margin-top: 4px
+            &:nth-child(1)
+                margin-top: 0px
+
+@media (min-width: $layout-breakpoint-big)
+    .header__img-points-bg
+        left: -106px
