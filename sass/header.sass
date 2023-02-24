@@ -1,0 +1,111 @@
+.nav__container
+    z-index: 1000
+    position: absolute
+    left: 162px
+    top: 45px
+    *:nth-child(1)
+        margin: 0
+        font-family: var(--main-font)
+        font-style: normal
+        font-weight: 600
+        font-size: 20px
+        line-height: 16px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: var(--white-color)
+.nav
+    position: absolute
+    width: 100%
+.nav__menu
+    z-index: 1100
+    width: 100%
+    position: relative
+    display: flex
+    top: 45px
+    justify-content: center
+    li
+        a
+            text-decoration: none
+            color: var(--white-color)
+            font-family: var(--main-font)
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            letter-spacing: 0.2em
+            text-transform: uppercase
+            margin-right: 32px
+            &:hover
+                margin-bottom: 6px
+                border-bottom: 2px solid var(--white-color)
+.nav__menu ul, .nav__menu li
+    display: flex
+.nav__menu-item--active
+    margin-bottom: 6px
+    border-bottom: 2px solid var(--white-color)
+.header-container
+    position: absolute
+    height: 800px
+.header
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 822px
+    min-height: 300px
+    z-index: 1400
+    img
+        height: 63px
+        width: 63px
+        margin-bottom: 13px
+        &:hover
+            animation: logo 2s normal
+.header__hero
+    div
+        &:first-of-type
+            font-family: var(--oswald-font)
+            font-style: normal
+            font-weight: 700
+            font-size: 48px
+            line-height: 64px
+            margin-bottom: 42px
+.header__img-bg
+    position: absolute
+    background-image: url("../public/bgHero.png")
+    background-repeat: no-repeat
+    background-size: cover
+    height: calc(822px + 22px)
+    width: calc(100% + 116px)
+    top: -22px
+    left: -116px
+.header__img-points-bg
+    position: absolute
+    background-image: url("../public/points.png")
+    background-repeat: no-repeat
+    background-size: cover
+    height: calc(822px + 22px)
+    width: calc(100% + 116px)
+    top: -22px
+    left: -116px
+    z-index: 1010
+    animation: puntos 5s steps(1000) infinite alternate
+.header__img-small-points-bg
+    position: absolute
+    background-image: url("../public/small_points.png")
+    background-repeat: no-repeat
+    background-size: cover
+    height: calc(822px + 22px)
+    width: calc(100% + 116px)
+    top: -22px
+    left: -116px
+    z-index: 1010
+    animation: smallPuntos 3s ease-out infinite alternate
+.header__slogan
+    font-family: var(--main-font)
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 32px
+    color: rgba(255, 255, 255, 0.7)
+.nav__hamburguer
+    display: none
