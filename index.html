@@ -7,7 +7,7 @@
   <title>Homework</title>
 
   <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/sass/styles.css">
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/learn-more.css">
@@ -22,11 +22,10 @@
 <body>
 
 
-  <div class="nav-container">
-
-    <div class="app-header__nav-menu-button">
-      <h1>PROJECT</h1>
-      <div class="app-header__nav-menu-button-icon">
+  <nav class="nav">
+    <div class="nav__container">
+      <h1 class="nav__title">PROJECT</h1>
+      <div class="nav__hamburguer">
         <span></span>
 
         <span></span>
@@ -34,28 +33,26 @@
         <span></span>
       </div>
     </div>
-
-    <nav>
+    <div class="nav__menu">
       <ul>
         <li><a href="#">Projects</a></li>
-        <li><a class="active" href="#">About us</a></li>
+        <li><a class="nav__menu-item--active" href="#">About us</a></li>
         <li><a href="#">Stories</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 
-  </div>
-
-  <div class="header-img-bg"></div>
-  <div class="header-small-points-bg"></div>
-  <div class="header-points-bg"></div>
+  <div class="header__img-bg"></div>
+  <div class="header__img-small-points-bg"></div>
+  <div class="header__img-points-bg"></div>
 
   <div class="header">
-    <div class="hero">
+    <div class="header__hero">
       <img src="public\Logo.svg" />
       <br />
       <div>Your Headline<br />Here</div>
-      <span class="slogan">
+      <span class="header__slogan">
         Lorem ipsum dolor sit amet, consectetur<br />adispiscing elit sed do
         eiusmod.
       </span>
@@ -63,21 +60,21 @@
   </div>
 
 
-  <main>
-    <div class="main-info center">
+  <main class="main">
+    <div class="main__info--center">
 
-      <div class="title">
+      <div class="main__title">
         <h2>This is the
           Section</h2>
         <h2>Headline,</h2><br>
         <h2>Continues</h2>
         <h2> to Two Lines</h2>
       </div>
-      <div class="subtitle">
+      <div class="main__subtitle">
         <h3>Lorem ipsum dolor sit amet, consectetur<br>adispiscing elit sed do eiusmod.</h3>
       </div>
-      <div class="main-text">
-        <p class="main-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      <div class="main__text">
+        <p class="main__text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et
           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
           ea
@@ -85,42 +82,41 @@
           nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
           anim
           id est laborum. Sed ut perspiciatis unde omnis.</p>
-        <p class="main-text-right">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        <p class="main__text--right">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
           commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div>
-        <button class="bottom" type="button">
-          <div class="bottom-text">Read more</div>
+        <button class="main__bottom" type="button">
+          <div class="main__bottom-text">Read more</div>
         </button>
       </div>
     </div>
   </main>
 
-  <section class="learn-more center">
-    <div class="bg-mask"></div>
-
-    <h2 class="learn-title">Learn more<br>about our culture...</h2>
-    <button class="learn-bottom" type="button"> <span>&#9654</span></button>
+  <section class="learn__more--center">
+    <div class="learn__bg-mask"></div>
+    <h2 class="learn__title">Learn more<br>about our culture...</h2>
+    <button class="learn__bottom" type="button"> <span>&#9654</span></button>
     <br>
-    <span class="learn-text">Duis aute irure dolor in reprehenderit<br>in voluptate velit esse cillum dolore
+    <span class="learn__text">Duis aute irure dolor in reprehenderit<br>in voluptate velit esse cillum dolore
       eu<br>fugiat nulla pariatur.
     </span>
   </section>
 
   <footer class="footer">
-    <div class="footer-info">
-      <div class="footer-image-container">
-        <img class="footer-image" src="public\SmallLogo.svg" /> Project
+    <div class="footer__info">
+      <div class="footer__image-container">
+        <img class="footer__image" src="public\SmallLogo.svg" /> Project
       </div>
-      <div class="footer-address">
+      <div class="footer__address">
         123 Street,<br>Anytown, USA 12345
       </div>
-      <div class="footer-mail">
+      <div class="footer__mail">
         <a href="mailto: hello@website.com">hello@website.com</a>
       </div>
-      <div class="footer-rights">&copy; 2021 Project. All rights reserved </div>
+      <div class="footer__rights">&copy; 2021 Project. All rights reserved </div>
     </div>
 
   </footer>

@@ -2,7 +2,7 @@ main {
     height: 700px;
 }
 
-.main-info {
+.main__info--center {
     position: relative;
     height: 700px;
     min-height: 300px;
@@ -17,7 +17,7 @@ main {
 
 
 
-.title h2 {
+.main__title h2 {
     display: inline;
     font-family: var(--oswald-font);
     font-style: normal;
@@ -28,7 +28,7 @@ main {
     margin: 0;
 }
 
-.subtitle h3 {
+.main__subtitle h3 {
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
@@ -39,7 +39,7 @@ main {
 
 }
 
-.main-text {
+.main__text {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 83px;
@@ -52,26 +52,26 @@ main {
     color: var(--color-666);
 }
 
-.main-text p {
+.main__text p {
     text-align: left;
 }
 
-.main-text-left {
+.main__text--left {
     width: 408px;
 }
 
-.main-text-right {
+.main__text--right {
     width: 416px;
 }
 
-.bottom {
+.main__bottom {
     background: var(--bottom-color2);
     border-style: none;
     border-radius: 18px;
     margin-top: 21px;
 }
 
-.bottom:hover {
+.main__bottom:hover {
     transform: rotateZ(7deg) translate(0px, -3px);
     transform-origin: left center;
 
@@ -80,7 +80,7 @@ main {
 
 
 
-.bottom-text {
+.main__bottom-text {
     margin: 5px 17px 6px 18px;
 
     font-family: var(--oswald-font);
@@ -98,48 +98,48 @@ main {
 
 @media(max-width:768px) {
 
-    .main-info, main {
+    .main__info--center, main {
         height: 100%;
         margin: 65px 0 116px 0
     }
 
-    .main-text {
+    .main__text {
         text-align: left;
         margin: unset;
 
     }
 
-    .title, .subtitle {
+    .main__title, .main__subtitle {
         text-align: center;
         margin: unset;
 
     }
 
-    .title h2, .subtitle h3 {
+    .main__title h2, .main__subtitle h3 {
         display: block;
     }
 
-    .title br {
+    .main__title br {
         display: none;
     }
 
-    .main-info {
+    .main__info--center {
         display: block;
 
         margin-left: 27px;
     }
 
-    .main-text {
+    .main__text {
         display: block;
         margin: unset;
 
     }
 
-    .main-text-left, .main-text-right {
+    .main__text--left, .main__text--right {
         width: auto;
     }
 
-    .bottom {
+    .main__bottom {
         text-align: center;
     }
 }
