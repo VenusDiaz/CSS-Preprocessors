@@ -1,39 +1,36 @@
+
 main
     height: 700px
-    .main__info--center
-        position: relative
-        height: 700px
-        min-height: 300px
+.main__info--center
+    position: relative
+    height: 700px
+    min-height: 300px
+    font-family: var(--oswald-font)
+    font-style: normal
+    font-weight: 700
+    font-size: 48px
+    line-height: 64px
+    color: var(--background-color)
+    margin-top: 0px
+.main__title
+    h2
+        display: inline
         font-family: var(--oswald-font)
         font-style: normal
-        font-weight: 700
+        font-weight: bolder
         font-size: 48px
         line-height: 64px
         color: var(--background-color)
-        margin-top: 0px
-        display: block
-        margin-left: 27px
-        .main__title
-            h2
-                display: inline
-                font-family: var(--oswald-font)
-                font-style: normal
-                font-weight: bolder
-                font-size: 48px
-                line-height: 64px
-                color: var(--background-color)
-                margin: 0
-            br
-                display: none
-    .main__subtitle
-        h3
-            font-family: var(--main-font)
-            font-style: normal
-            font-weight: 400
-            font-size: 24px
-            line-height: 32px
-            color: var(--color-666)
-            margin: 40px 0 48px 0
+        margin: 0
+.main__subtitle
+    h3
+        font-family: var(--main-font)
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 32px
+        color: var(--color-666)
+        margin: 40px 0 48px 0
 .main__text
     display: grid
     grid-template-columns: 1fr 1fr
@@ -45,10 +42,6 @@ main
     font-size: 16px
     line-height: 22px
     color: var(--color-666)
-    text-align: left
-    margin: unset
-    display: block
-    margin: unset
     p
         text-align: left
 .main__text--left
@@ -60,7 +53,6 @@ main
     border-style: none
     border-radius: 18px
     margin-top: 21px
-    text-align: center
     &:hover
         transform: rotateZ(7deg) translate(0px, -3px)
         transform-origin: left center
@@ -75,15 +67,30 @@ main
     text-align: center
     letter-spacing: 0.1em
     color: var(--white-color)
-@media(max-width
-    &:768px)
-        .main__info--center, main
-            height: 100%
-            margin: 65px 0 116px 0
-.main__title, .main__subtitle
-    text-align: center
-    margin: unset
-.main__title h2, .main__subtitle h3
-    display: block
-.main__text--left, .main__text--right
-    width: auto
+
+$layout-breakpoint-small: 768px
+
+@media (max-width: $layout-breakpoint-small)
+    .main__info--center, main
+        height: 100%
+        margin: 65px 0 116px 0
+    .main__text
+        text-align: left
+        margin: unset
+        display: block
+        margin: unset
+    .main__title, .main__subtitle
+        text-align: center
+        margin: unset
+    .main__title h2, .main__subtitle h3
+        display: block
+    .main__title
+        br
+            display: none
+    .main__info--center
+        display: block
+        margin-left: 27px
+    .main__text--left, .main__text--right
+        width: auto
+    .main__bottom
+        text-align: center

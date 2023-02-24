@@ -1,0 +1,118 @@
+main {
+  height: 700px;
+}
+
+.main__info--center {
+  position: relative;
+  height: 700px;
+  min-height: 300px;
+  font-family: var(--oswald-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: var(--background-color);
+  margin-top: 0px;
+}
+
+.main__title h2 {
+  display: inline;
+  font-family: var(--oswald-font);
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 64px;
+  color: var(--background-color);
+  margin: 0;
+}
+
+.main__subtitle h3 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-666);
+  margin: 40px 0 48px 0;
+}
+
+.main__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 83px;
+  margin: 0 120px 0 97px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-666);
+}
+.main__text p {
+  text-align: left;
+}
+
+.main__text--left {
+  width: 408px;
+}
+
+.main__text--right {
+  width: 416px;
+}
+
+.main__bottom {
+  background: var(--bottom-color2);
+  border-style: none;
+  border-radius: 18px;
+  margin-top: 21px;
+}
+.main__bottom:hover {
+  transform: rotateZ(7deg) translate(0px, -3px);
+  transform-origin: left center;
+  transition: 0.6s cubic-bezier(0, 0.9, 1, 1);
+}
+
+.main__bottom-text {
+  margin: 5px 17px 6px 18px;
+  font-family: var(--oswald-font);
+  font-style: "regular";
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+  .main__info--center, main {
+    height: 100%;
+    margin: 65px 0 116px 0;
+  }
+  .main__text {
+    text-align: left;
+    margin: unset;
+    display: block;
+    margin: unset;
+  }
+  .main__title, .main__subtitle {
+    text-align: center;
+    margin: unset;
+  }
+  .main__title h2, .main__subtitle h3 {
+    display: block;
+  }
+  .main__title br {
+    display: none;
+  }
+  .main__info--center {
+    display: block;
+    margin-left: 27px;
+  }
+  .main__text--left, .main__text--right {
+    width: auto;
+  }
+  .main__bottom {
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
